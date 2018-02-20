@@ -1,0 +1,50 @@
+.home-page{
+    width:350px;
+    margin:30px auto;
+    .user-input{
+        input{            
+         width:100%;
+        }
+        .data-list{
+            ul{
+                height: 250px;
+                overflow-y: scroll;
+                &.item-list{
+                    padding: 0px;
+                    li{
+                        &:first-child{                            
+                            border-top-left-radius: 0px;
+                            border-top-right-radius: 0px;
+                        }
+                        list-style-type: none;
+                        .data-image{
+                            display: inline-block;
+                            margin-right: 5%;
+                            img{
+                                width: 30px;
+                                height: 30px;
+                            }
+                        }
+                        .data{
+                            display: inline-block;
+                        } 
+                        &:hover{
+                            background-color: #5a71a7;
+                        } 
+                        &.active{
+                            background-color: #5a71a7;
+                            background-image: none;
+                            border:none;
+                        }                   
+                    }
+                }
+            }     
+        }
+    }
+}
+::-webkit-scrollbar {
+     width:3px;
+    }
+::-webkit-scrollbar-thumb {
+        background: #ccc; 
+    }
